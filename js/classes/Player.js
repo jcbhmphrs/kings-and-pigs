@@ -17,7 +17,7 @@ class Player {
     };
 
     draw() {
-        c.fillStyle = "black";
+        c.fillStyle = "blue";
         c.fillRect(this.position.x, this.position.y, this.width, this.height);
     };
 
