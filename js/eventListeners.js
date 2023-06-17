@@ -2,7 +2,7 @@ window.addEventListener("keydown", (event) => {
     switch (event.key) {
         case "w":
             //jumping
-            if (player.velocity.y == 0) {
+            if (player.velocity.y == 0 && player.sides.bottom == canvas.height) {
                 player.velocity.y = -15;
             }
             break;

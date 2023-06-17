@@ -14,10 +14,11 @@ class Player {
             bottom: this.position.y + this.height,
         };
         this.gravity = 0.5;
+        this.playerColor = "#071aa7";
     };
 
     draw() {
-        c.fillStyle = "black";
+        c.fillStyle = this.playerColor;
         c.fillRect(this.position.x, this.position.y, this.width, this.height);
     };
 

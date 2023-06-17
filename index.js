@@ -1,10 +1,12 @@
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
 
-canvas.width = 64 * 16; // 1024
-canvas.height = 64 * 9; // 576
+canvas.width = 72 * 16; // 1024
+canvas.height = 72 * 9; // 576
 
-const player = new Player();
+const player = new Player()
+
+
 const keys = {
     w: { pressed: false },
     a: { pressed: false },
@@ -14,7 +16,7 @@ const keys = {
 function animate() {
 
     window.requestAnimationFrame(animate);
-    c.fillStyle = "#333333";
+    c.fillStyle = "#ffffff";
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     player.velocity.x = 0;
