@@ -18,7 +18,7 @@ class Player {
     };
 
     draw() {
-        c.fillStyle = this.playerColor;
+        c.fillStyle = "black";
         c.fillRect(this.position.x, this.position.y, this.width, this.height);
     };
 
